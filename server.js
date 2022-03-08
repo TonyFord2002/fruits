@@ -74,8 +74,8 @@ app.post('/fruits/', (req, res)=>{
         req.body.readyToEat = false; //set readyToEat to false insted of on so it will display correctly
     }
         Fruit.create(req.body, (error, createdFruit)=>{
-                res.send(createdFruit)
-               // res.redirect('/fruits')//send user back to index page
+                //res.send(createdFruit)
+               res.redirect('/fruits')//send user back to index page
         })
 
 })
