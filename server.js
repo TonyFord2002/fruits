@@ -18,7 +18,7 @@ app.use((req, res, next)=>{
     next()
 })
 //near the top, around other app.use() calls
-app.use(express.urlencoded({extended:false}))
+app.use(express.urlencoded({extended:true}))
 
 app.get('/fruits/seed', (req, res)=>{
     Fruit.create([
