@@ -12,8 +12,8 @@ const React = require('react')
                    this.props.fruits.map((fruit, i) => {
                     return (
                         <li>
-                        The <a href={`/fruits/${ fruit.id }`}> { fruit.name } </a> is { fruit.color } and{' '} 
-                        { fruit.readyToEat ? ` it is ready to eat` : `it is not ready to eat` }
+                            The <a href = {`/fruits/${ fruit.id }`}>{ fruit.name } </a> is { fruit.color }
+                               { fruit.readyToEat ? ` It is ready to eat` : ` It is not ready to eat` }
                         </li>
                         )
                     })

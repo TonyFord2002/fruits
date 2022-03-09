@@ -67,16 +67,16 @@ app.get('/fruits/:id', (req,res) =>{
 
 //add post route to create new fruit
 app.post('/fruits/', (req, res)=>{
-    console.log(req.body)
     if(req.body.readyToEat === 'on'){ //if checked, req.body.readyToEat is set to 'on'
         req.body.readyToEat = true; //set readyToEat to true insted of on so it will display correctly
     } else { //if not checked, req.body.readyToEat is undefined
         req.body.readyToEat = false; //set readyToEat to false insted of on so it will display correctly
     }
-        Fruit.create(req.body, (error, createdFruit)=>{
-                //res.send(createdFruit)
-               res.redirect('/fruits')//send user back to index page
-        })
+    Fruit.create(req.body, (error, createdFruit)=>{
+        //res.send(createdFruit)
+        res.redirect('/fruits')//send user back to index page
+    })
+    console.log(req.body)
 
 })
 
