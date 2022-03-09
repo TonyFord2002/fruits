@@ -3,9 +3,10 @@ const React = require('react')
        render () {
         return (
           <div>
+             <link rel="stylesheet" href="/css/app.css"/>    
                 <h1>Fruits show page</h1>
-                The { this.props.fruit.name } is and  { this.props.fruit.color }
-        { this.props.fruit.readyToEat ? ` it is ready to eat` : ` it is not ready to eat` }
+                <h2>The { this.props.fruit.name } is and  { this.props.fruit.color }
+        { this.props.fruit.readyToEat ? ` it is ready to eat` : ` it is not ready to eat` }</h2>
             </div>
          );
         }
