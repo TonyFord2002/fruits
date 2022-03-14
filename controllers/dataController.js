@@ -13,6 +13,7 @@ const dataController = {
       }
     });
   },
+  
   create(req, res, next){
     req.body.readyToEat = req.body.readyToEat === "on" ? true : false;
     // Use Model to create Fruit Document
@@ -26,7 +27,7 @@ const dataController = {
           res.locals.data.fruit = createdFruit
           next()
         }
-    });
+    })
   },
   show(req, res, next){
     Fruit.findById(req.params.id, (err, foundFruit)=>{

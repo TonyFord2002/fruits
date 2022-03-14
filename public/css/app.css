@@ -4,7 +4,11 @@ html{
 }
 ul{
     list-style-type: none;
+    color: white;
 }
 h2{
+    color: white;
+}
+a{
     color: white;
 }

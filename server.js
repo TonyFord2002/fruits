@@ -88,7 +88,7 @@ app.listen(PORT, () => {
 //     })
 // })
 
-// //put this above your Show route adds page to add new fruit
+//put this above your Show route adds page to add new fruit
 // app.get('/fruits/new', (req, res) => {
 //     res.render('New')
 // })

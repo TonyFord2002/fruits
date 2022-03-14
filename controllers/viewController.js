@@ -3,6 +3,9 @@ const viewController = {
   index(req, res, next){
     res.render('Index', res.locals.data)
   },
+  new(req,res,next){
+      res.render('New')
+  },
   show(req, res, next){
     res.render('Show', res.locals.data)
   },
