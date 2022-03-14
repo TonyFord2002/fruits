@@ -11,7 +11,7 @@ const dataController = {
         res.locals.data.fruits = allFruits
         next()
       }
-    });
+    })
   },
   
   create(req, res, next){

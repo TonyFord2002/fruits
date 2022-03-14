@@ -19,7 +19,7 @@ const React = require('react')
                                <form action={`/fruits/${fruit._id}?_method=DELETE`} method="POST">
                                    <input type="submit" value="DELETE"/>
                                </form>
-                               <a href={`/fruits/${fruit._id}/edit`}>Edit This Fruit</a>
+                               <a href={`/fruits/${fruit._id}/edit`}><button>Edit This Fruit</button></a>
                                <br/><br/>
                         </li>
                         )
