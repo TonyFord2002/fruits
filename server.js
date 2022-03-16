@@ -25,12 +25,10 @@ app.use(methodOverride('_method')); // Allows us to override methods
 app.use(express.static('public')); // Allows us to have Static Files
 app.use('/fruits', require('./controllers/routeController.js')); // Mounts our RESTFUL/INDUCES ROUTES at /fruits
 
-
 // Listen on PORT
 app.listen(PORT, () => {
   console.log('Making that money on:', PORT)
 })
-
 
 
 
